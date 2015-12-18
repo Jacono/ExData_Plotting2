@@ -55,7 +55,6 @@ You must address the following questions and tasks in your exploratory analysis.
 
 Q1 : *Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.*
 
-
 R1 : *Yes, the total emission from PM2.5 decreased in USA from 1999 to 2008*
 ![plot1.png](https://github.com/Jacono/ExData_Plotting2/blob/master/plot1.png)
 
@@ -72,10 +71,12 @@ R3 : *Except for POINT that show an increase, alla other source show a negative 
 
 
 Q4 : *Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?*
+
 R4 : *Emissions from coal combustion-related sources show e negative trend from 1999 to 2008*
 ![plot4.png](https://github.com/Jacono/ExData_Plotting2/blob/master/plot4.png)
 
 Q5 : *How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?*
+
 R5 : *Mobile vehicle emission in Baltimore show e negative trend*
 ![plot5.png](https://github.com/Jacono/ExData_Plotting2/blob/master/plot5.png)
 
