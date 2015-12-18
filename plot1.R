@@ -7,7 +7,7 @@ library(dplyr)
 NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")
 
-# Questions
+# Questions 1
 # -------------------------------
 # Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? 
 # Using the base plotting system, make a plot showing the total PM2.5 emission from all sources 
@@ -37,7 +37,7 @@ with(Emissions,
             names = year,          # set Labels for bars
             xlab = "Years",                # set label for x axis
             ylab = "Millions of Tons",
-            col = rgb(0.7 , 0.7, 0.7, alpha = 0.2))     # set label for y axis      
+            col = rgb(0.7 , 0.7, 0.7))     # set label for y axis      
       )
 
 

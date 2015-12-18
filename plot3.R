@@ -6,7 +6,7 @@ NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")
 
 
-# Questions
+# Questions 3
 # -------------------------------
 # Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, 
 # which of these four sources have seen decreases in emissions from 1999-2008 for Baltimore City? 
@@ -29,12 +29,11 @@ Emissions <-
       group_by(year,type) %>%
       summarise(TotalEmission = sum(Emissions))
 
-str(Emissions)
 
 p <- ggplot(Emissions, aes(x = factor(year), y = TotalEmission))
 p +   geom_bar(stat = "identity") +      
       facet_grid( .~ type) +
-      geom_smooth(method = "lm", se=F, color="#73C2FB", aes(group=1), size=0.5) + 
+      geom_smooth(method = "lm", se=F, color="red", aes(group=1), size=0.5) + 
       ylab(expression(paste("PM"[2.5], " Emissions"))) + 
       xlab('Year') + 
       ggtitle('Emissions per Type in Baltimore')
