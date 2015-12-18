@@ -56,6 +56,14 @@ You must address the following questions and tasks in your exploratory analysis.
 Q1 : *Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.*
 
 R1 : *Yes, the total emission from PM2.5 decreased in USA from 1999 to 2008*
+
+```r
+Emissions <- 
+      NEI %>%      
+      group_by(year) %>%
+      summarise(TotalEmission = sum(Emissions)/1e6)
+```
+      
 ![plot1.png](https://github.com/Jacono/ExData_Plotting2/blob/master/plot1.png)
 
 Q2 : *Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? Use the base plotting system to make a plot answering this question.
